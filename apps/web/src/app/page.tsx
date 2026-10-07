@@ -1,13 +1,16 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { ArrowRight, FileText, Share2, Search, Sparkles } from 'lucide-react';
-import { useAuth } from '@/lib/authContext';
-import { api } from '@/lib/api';
-import { Brand, Notice, Field, Loading, errorMessage } from '@/components/ui';
-import { ExampleGraph } from '@/components/ExampleGraph';
+"use client";
+
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { ArrowRight, FileText, Share2, Search } from "lucide-react";
+
+import { useAuth } from "../lib/authContext";
+import { api } from "../lib/api";
+import { Brand, Notice, Field, Loading, errorMessage } from "../components/ui";
+import { ExampleGraph } from "../components/ExampleGraph";
 export default function Home() {
   const {
     user,
