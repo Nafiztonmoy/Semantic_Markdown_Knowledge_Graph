@@ -1,0 +1,11 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": ["apps/web/src"],
+  "locale": "en",
+  "canonicalMap": "UX-CONTRACT.md",
+  "requiredCapabilities": ["Select/Listbox", "Form", "Scrollbar", "Toast", "CRUD"],
+  "ownership": {"Select/Listbox": "native"},
+  "requiredCommands": ["typecheck", "ui"],
+  "commands": {"typecheck": "cd apps/web && npm run type-check", "ui": "cd apps/web && npm run test:ui"},
+  "evidence": {"crudFullFlow": "apps/web/tests/ui-regression.cjs", "failurePaths": "apps/web/tests/ui-regression.cjs"}
+}
